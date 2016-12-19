@@ -1,7 +1,7 @@
 FROM python:alpine
 
-RUN pip install --upgrade pip && \
-    pip install rq-dashboard
+RUN pip --quiet install --upgrade pip && \
+    pip --quiet install rq-dashboard
 
 STOPSIGNAL SIGKILL
 
